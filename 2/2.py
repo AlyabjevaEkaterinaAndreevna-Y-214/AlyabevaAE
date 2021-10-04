@@ -1,4 +1,5 @@
-n = int(input("Введите количество минут: "))
-часы = n % (60 * 24) // 60
-минуты = n % 60
-print("Часов: ", hours, "Минут: ", minutes)
+# -- coding: utf-8 --
+a = int(input('1 катет - '))
+b = int(input('2 катет - '))
+s = a*b/2
+print(s)

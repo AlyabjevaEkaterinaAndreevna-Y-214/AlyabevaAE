@@ -1,11 +1,14 @@
-n = int(input("Введите первую сторону шоколадки в дольках n, (n != m) : "))
-m = int(input("Введите вторую сторону шоколадки в дольках m, (n != m) : "))
-k = int(input("Оставшаяся часть в дольках k: "))
-if n != m:
-    if (n * m > k) and  (k % n == 0 or k % m == 0):
-        print("Да")
+# -- coding: utf-8 --
+def schet():
+    print("Введите 3 целых числа")
+    a = int(input())
+    b = int(input())
+    c = int(input())
+    k = 0
+    if a == b and b == c:
+        return '3 числа'
+    elif a == b or b == c:
+        return '2 числа'
     else:
-        print("Нет")
-else:
-    print("Шоколадка должна быть прямоугольной формы")
-
+        return '0 чисел'
+print (schet())
