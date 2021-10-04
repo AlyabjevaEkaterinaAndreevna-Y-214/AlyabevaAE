@@ -1,5 +1,12 @@
 # -- coding: utf-8 --
-n = int(input('минуты - '))
-hour = n % (60 * 24) // 60
-min = n % 60
-print(hour, min)
+name = input ('имя = ')
+age = int (input ('возраст = '))
+if 0<age<75 and name != 'Иван' and name != 'иван':
+    if age > 16:
+        print ('поздравляем вы поступили в ВГУИТ')
+    elif age < 16:
+
+        ost = 16 - age
+        print ('сначало нужно окончить школу, тебе осталось учиться:',ost)
+else:
+    print('не подходите')
